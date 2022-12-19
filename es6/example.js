@@ -29,3 +29,9 @@ console.log(Object.assign(
   {a: 'a1'},
   {}
 ));
+
+function doubleNumbers(array) {
+  return array.map(x => x * 2);
+}
+
+console.log(doubleNumbers([1, 2, 3]));
