@@ -35,3 +35,17 @@ function doubleNumbers(array) {
 }
 
 console.log(doubleNumbers([1, 2, 3]));
+
+const createPoint = (x, y) => Object.freeze([x, y]);
+
+const movePoint = ([x, y], dx, dy) => {
+  return Object.freeze([x + dx, y + dy]);
+}
+
+let point = createPoint(0, 0);
+
+point = movePoint(point, 1, 1);
+console.log(point);
+
+point = movePoint(point, 1, 1);
+console.log(point);
