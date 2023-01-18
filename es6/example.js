@@ -49,3 +49,14 @@ console.log(point);
 
 point = movePoint(point, 1, 1);
 console.log(point);
+
+
+const array1 = [1,2,3,4,5];
+const add1 = (x) => x + 1;
+console.log(array1.map(add1));
+
+const validArticles = articles => articles.filter(article !== null && article !== undefined);
+
+const compact = xs => xs.filter(x => x !== null && x!== undefined);
+
+console.log(compact(['a1', null, 'a2']));
